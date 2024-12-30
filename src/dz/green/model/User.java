@@ -57,6 +57,9 @@ public abstract class User {
     public String getPassword() {
         return password;
     }
+    public void setPassword(String password) {
+        this.password = password;
+    }
 
     public boolean updatePassword(String oldPassword,String newPassword) {
         if(this.password.equals(oldPassword)){

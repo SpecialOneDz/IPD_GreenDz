@@ -17,14 +17,14 @@ public class Main {
         String user = "GreenDz";   // Put your oracle user
         String password = "your_password";  // Put your oracle password
 
-        // inserst in table Clients
+        // insert in table Admins
 
 
         try (Connection connection = DriverManager.getConnection(url, user, password)){
 
-            //data
+            //Admin data
             Admin a = new Admin(1,"Adil","Chekati","adil.chekati@univ-constantine2.dz", LocalDate.of(1985, 5, 15),"M2STIC24", "0774182454","all");
-
+            //Admin persistence
             AdminDAO adminDAO = new AdminDAO(connection);
             adminDAO.create(a);
             System.out.println("Données insérées avec succés.");

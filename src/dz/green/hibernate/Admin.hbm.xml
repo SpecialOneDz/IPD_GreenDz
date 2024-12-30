@@ -1,0 +1,42 @@
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="dz.green.model">
+
+    <class name="Admin" table="admin">
+
+        <id name="id" type="int">
+            <column name="id"/>
+        </id>
+
+        <property name="firstname">
+            <column name="firstname"/>
+        </property>
+
+        <property name="lastname">
+            <column name="lastname"/>
+        </property>
+
+        <property name="email">
+            <column name="email"/>
+        </property>
+
+        <property name="birthdate">
+            <column name="birthdate"/>
+        </property>
+
+        <property name="password">
+            <column name="password"/>
+        </property>
+
+        <property name="phoneNumber">
+            <column name="phonenumber"/>
+        </property>
+
+        <property name="permissions">
+            <column name="permissions"/>
+        </property>
+
+    </class>
+
+</hibernate-mapping>
