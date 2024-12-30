@@ -23,7 +23,7 @@
         <!-- Pretty format le SQL généré -->
         <property name="hibernate.format_sql">true</property>
        
-	    <!-- déclaration de tous les fichiers de mapping -->
+	    <!-- déclaration de tous les fichiers de mapping-->
         <mapping resource="dz/green/hibernate/Admin.hbm.xml"/>
 
 		
